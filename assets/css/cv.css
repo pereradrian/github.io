@@ -339,6 +339,13 @@ p {
     margin-right: auto;
 }
 
+.publication-img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
 .profile-img {
     display: inline;
     margin: 0 auto;

@@ -328,6 +328,18 @@ p {
     }
 }
 
+.buggy-1 {
+    margin-left: 30px;
+    height: 3px;
+    width: 1px;
+    text-align: center;
+    text-decoration: none;
+    background-position: center;
+    display: block;
+    position: relative;
+    text-decoration: underline;
+}
+
 .image-cropper {
     width: 200px;
     height: 200px;

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Adrián Muñoz Perera</title>
+    <title>CV - Adrián Muñoz Perera</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -24,6 +24,21 @@
 </head>
 
 <body>
+    <!-- Top navigation bar-->
+    <div class="navbar">
+        <a href="./home.html">Home</a>
+        <a href="./wiki.html">Wiki</a>
+        <div class="dropdown">
+            <button id="nav-dropbtn" class="dropbtn">CV 
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content hidden">
+                <a href="./index_es.html">ES</a>
+                <a href="./index_en.html">EN</a>
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper mt-lg-5">
         <div class="sidebar-wrapper">
             <div class="profile-container">
@@ -41,11 +56,11 @@
             </div>
 
             <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
+                <h2 class="container-block-title">Educación</h2>
                 <div class="item">
                     <h4 class="degree">Master's Degree in Mathematics and Applications (MMA)</h4>
                     <p>
-                        <i>Stochastic processes, functional data analysis, differential equations and numerical analysis.</i>
+                        <i>Procesos estocásticos, análisis de datos funcionales, ecuaciones diferenciales y cálculo numérico.</i>
                     </p>
                     <h5 class="meta">Universidad Autónoma de Madrid</h5>
                     <div class="time">2018 - 2020</div>
@@ -53,23 +68,23 @@
                 <div class="item">
                     <h4 class="degree">Master's Degree in ICT Research and Innovation (i2-ICT)</h4>
                     <p>
-                        <i>Numerical and data intensive computing, information retrieval, machine learning, chaos theory, signal processing, applied bayesian methods and artificial neural networks</i>
+                        <i>Cálculo intensivo y manejo de datos a gran escala, recuperación de información, aprendizaje automático, teoría del caos, procesamiento de señales, métodos bayesianos aplicados y redes neuronales artificiales.</i>
                     </p>
                     <h5 class="meta">Universidad Autónoma de Madrid</h5>
                     <div class="time">2018 - 2020</div>
                 </div>
                 <div class="item">
-                    <h4 class="degree">Double degree in Mathematics and Computer Science</h4>
+                    <h4 class="degree">Doble grado en Matemáticas e Ingeniería Informática</h4>
                     <h5 class="meta">Universidad Autónoma de Madrid</h5>
                     <div class="time">2013 - 2018</div>
                 </div>
             </div>
 
             <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
+                <h2 class="container-block-title">Idiomas</h2>
                 <ul class="list-unstyled interests-list">
-                    <li>English <span class="lang-desc">(Professional competence, Cambridge B2)</span></li>
-                    <li>Spanish <span class="lang-desc">(Native)</span></li>
+                    <li>Inglés <span class="lang-desc">(Competencia profesional completa, Cambridge B2)</span></li>
+                    <li>Español <span class="lang-desc">(Nativo)</span></li>
                 </ul>
             </div>
         </div>
@@ -78,13 +93,13 @@
             <!--//section-->
 
             <section class="section experiences-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>Experience</h2>
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>Experiencia</h2>
 
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Project leader, analyst and software developer</h3>
-                            <div class="time">september 2018 - Present</div>
+                            <h3 class="job-title">Analista y desarrollador</h3>
+                            <div class="time">septiembre 2018 - Presente</div>
                         </div>
                         <div class="company">
                             <a href="https://www.qrr.es/">Quantitative Risk Research (QRR), Madrid</a>
@@ -92,16 +107,16 @@
                     </div>
                     <div class="details">
                         <p>
-                            Leader on ETL and custom installation processes, design, development and implementation in <a href="https://www.qrr.es/products/qalm/">QALM</a> project, a real time critical software tool for data intensive computations applied
-                            to asset liability management (<i>ALM</i>). Analysis, processing and modelling of financial data for rate interest and liquidity risks evaluation and regulatory reports generation.
+                            Líder de proyecto de procesos de ETL e instalación personalizada, diseño, desarrollo e implantación de la aplicación <a href="https://www.qrr.es/products/qalm/">QALM</a>, software crítico para cálculos intensivos con datos
+                            a gran escala para la gestión de activos y pasivos (<i>ALM</i>). Procesamiento, análisis y modelado de datos financieros para la evaluación de riesgo de tipo de interés y de riesgo de liquidez, y generación de informes regulatorios.
                         </p>
                     </div>
                 </div>
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Associate consultant</h3>
-                            <div class="time">may 2020 - Present</div>
+                            <h3 class="job-title">Consultor asociado</h3>
+                            <div class="time">mayo 2020 - Presente</div>
                         </div>
                         <div class="company">
                             <a href="https://www.quant.global">Quant AI Lab, Madrid</a>
@@ -111,46 +126,41 @@
             </section>
             <section class="skills-section section">
                 <!--//item-->
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-cogs   "></i></span>Skills</h2>
-                <div>
-                    <p>
-                        Until now I have been able to develop a good knowledge in next fields.
-                    </p>
-                </div>
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-cogs   "></i></span>Habilidades</h2>
                 <div class="skillset">
                     <ul class="skill-list">
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 80%;"><p>Asset Liability Management (ALM)</p></span>
+                            <span class="skill-item-content" style="width: 80%;"><p>Gestión de activos y pasivos <i>(ALM)</i></p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 95%;"><p>Data intensive computing</p></span>
+                            <span class="skill-item-content" style="width: 95%;"><p>Cálculo intensivo</p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 100%;"><p>Software development</p></span>
+                            <span class="skill-item-content" style="width: 95%;"><p>Manejo de datos a gran escala</p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 85%;"><p>Teamwork</p></span>
+                            <span class="skill-item-content" style="width: 100%;"><p>Desarrollo de software</p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 80%;"><p>Agile methodologies</p></span>
+                            <span class="skill-item-content" style="width: 80%;"><p>Metodología ágil</p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 95%;"><p>Machine learning</p></span>
+                            <span class="skill-item-content" style="width: 95%;"><p>Aprendizaje automático</p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 100%;"><p>Functional Data Analysis</p></span>
+                            <span class="skill-item-content" style="width: 100%;"><p>Análisis de datos funcionales <i>(FDA)</i></p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 90%;"><p>Web scraping</p></span>
+                            <span class="skill-item-content" style="width: 90%;"><p><i>Web scraping</i></p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 80%;"><p>Research</p></span>
+                            <span class="skill-item-content" style="width: 80%;"><p>Investigación</p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 80%;"><p>Android development</p></span>
+                            <span class="skill-item-content" style="width: 80%;"><p>Desarrollo Android</p></span>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-item-content" style="width: 60%;"><p>Artificial Neural Networks</p></span>
+                            <span class="skill-item-content" style="width: 60%;"><p>Redes neuronales</p></span>
                         </li>
                         <li class="skill-item">
                             <span class="skill-item-content" style="width: 80%;"><p>ETL</p></span>
@@ -162,10 +172,10 @@
 
             <section class="skills-section section">
                 <!--//item-->
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-wrench"></i></span>Tools</h2>
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-wrench"></i></span>Herramientas</h2>
                 <div>
                     <p>
-                        I enjoy learning new languages and software development frameworks. These are my favourites.
+                        Me gusta aprender a utilizar nuevas herramientas software y lenguajes de programación. Estas son mis favoritas.
                     </p>
                 </div>
                 <div class="skillset">
@@ -251,7 +261,7 @@
 
             <section class="skills-section section">
                 <!--//item-->
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-book"></i></span>Publications</h2>
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-book"></i></span>Publicaciones</h2>
                 <div class="publications-container">
                     <div class="item">
                         <div class="meta">
@@ -259,7 +269,7 @@
                                 <h3 class="job-title">
                                     <a href="https://repositorio.uam.es/handle/10486/692569">Análisis espectral de procesos Gaussianos</a>
                                 </h3>
-                                <div class="time">Mentored by <a href="https://portalcientifico.uam.es/es/ipublic/researcher/260587">Alberto Suárez González</a></div>
+                                <div class="time">Tutelado por <a href="https://portalcientifico.uam.es/es/ipublic/researcher/260587">Alberto Suárez González</a></div>
                             </div>
                             <div class="company">
                                 Escuela Politéncica Superior, UAM · julio de 2020
@@ -267,8 +277,8 @@
                         </div>
                         <div class="details">
                             <p>
-                                Final project corresponding to my Master's Degree in ICT Research and Innovation (i2-ICT). A computational analysis on spectral representation (in the domain of frequencies) of several types of gaussian processes in supported in bounded domains. Kernels
-                                such as brownian motion, brownian bridge, Ornstein-Uhlenbeck, Radial Basis Function (<i>RBF</i>), Matérn and exponential are studied.
+                                Trabajo final del Máster Universitario en Investigación e Innovación en Inteligencia Computacional y Sistemas Interactivos. Un análisis computacional sobre la representación espectral (en el espacio de frecuencias) de varios procesos gaussianos en tiempo
+                                continuo y sus trayectorias. Se estudian núcleos como movimiento browniano, puente browniano, Ornstein-Uhlenbeck, función de base radial (<i>RBF</i>), Matérn y exponencial.
                             </p>
                             <div>
                                 <img class="publication-img" src="assets/images/publications/interp_trajectory.png" alt="" style="max-width: 900px;" />
@@ -286,15 +296,15 @@
                                 <h3 class="job-title">
                                     Functional Data Classification and Regularization
                                 </h3>
-                                <div class="time">Mentored by <a href="http://matematicas.uam.es/~joser.berrendero/">Jose Ramón Berrendero Díaz</a></div>
+                                <div class="time">Tutelado por <a href="http://matematicas.uam.es/~joser.berrendero/">Jose Ramón Berrendero Díaz</a></div>
                             </div>
                             <div class="company">
-                                Departamento de Matemáticas, Facultad de Ciencias, UAM · september 2019
+                                Departamento de Matemáticas, Facultad de Ciencias, UAM · septiembre de 2019
                             </div>
                         </div>
                         <div class="details">
                             <p>
-                                Master's Degree in Mathematics and Applications' final project. On regularization of functional data and its embedding in optimal classification rules in the continuous time gaussian process framework.
+                                Trabajo final del Máster Universitario en Matemáticas y Aplicaciones. Un estudio sobre la regularización de datos funcionales y su integración en reglas óptimas de clasificación para procesos gaussianos en tiempo continuo.
                             </p>
                             <div>
                                 <img class="publication-img" src="assets/images/publications/smooth_alpha.png" alt="" style="max-width: 300px;" />
@@ -310,17 +320,16 @@
                             <div class="upper-row">
                                 <h3 class="job-title">
                                     <a href="https://link.springer.com/chapter/10.1007/978-3-030-01418-6_59">Directional Data Analysis for Shape Classification</a></h3>
-                                <div class="time">Mentored by <a href="https://portalcientifico.uam.es/es/ipublic/researcher/260587">Alberto Suárez González</a></div>
+                                <div class="time">Tutelado por <a href="https://portalcientifico.uam.es/es/ipublic/researcher/260587">Alberto Suárez González</a></div>
                             </div>
                             <div class="company">
-                                Springer · september 2018
+                                Springer · septiembre de 2018
                             </div>
                         </div>
                         <div class="details">
                             <p>
-                                Final project corresponding to Double Degree on Mathematics and Computer Science. The codification of shape of objects in terms of directional data is adressed, with an application to a real world classification problem. Included in the proceedings of
-                                the 27th International Conference on Artificial Neural Networks, ICANN 2018, held in Rhodes, Greece, in October 2018. Part of the Lecture Notes in Computer Science book series (LNCS, volume 11139). Also part of the Theoretical
-                                Computer Science and General Issues book sub series (LNTCS, volume 11139)
+                                Trabajo final del Doble Grado en Matemáticas e Informática. Un estudio sobre la codificación de la forma de los contornos de objetos a través de datos direccionales, con una aplicación a un problema de clasificación con datos reales. Presentado en la
+                                27ª Conferencia Internacional de Redes Neuronales Artificiales (<i>ICANN 2018</i> ) en Rodas, Grecia en octubre de 2018.
                             </p>
                             <div>
                                 <img class="publication-img" src="assets/images/publications/dummy_dist.png" alt="" style="max-width: 300px;" />
@@ -338,7 +347,7 @@
 
     <footer class="footer">
         <div class="text-center">
-            <small class="copyright">Designed by <a href="http://www.linkedin.com/in/amunozperera" target="_blank">Adrián Muñoz Perera</a></small>
+            <small class="copyright">Diseñado por <a href="http://www.linkedin.com/in/amunozperera" target="_blank">Adrián Muñoz Perera</a></small>
         </div>
         <!--//container-->
     </footer>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>Wiki</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -11,11 +11,12 @@
     <meta name="description" content="Adri Mu">
     <meta name="author" content="Adri Mu">
     <meta name="google-site-verification" content="kvanqFcy8j-O__OyfmlnpR943AVw7N1f9nQ46ib3vIc" />
-    <meta http-equiv="Refresh" content="0; url='./index_en.html'" />
 
     <link rel="shortcut icon" href="favicon.ico">
     <!--Ajax import-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- FontAwesome JS-->
@@ -27,14 +28,15 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/cv.css">
 </head>
 
+
 <body>
-    <!-- Top navigation bar-->
-    <div class="navbar">
+
+    <div class="navbar navbarwiki">
         <a href="./home.html">Home</a>
         <div class="dropdown">
             <button id="nav-dropbtn" class="dropbtn">CV 
-            <i class="fa fa-caret-down"></i>
-          </button>
+                <i class="fa fa-caret-down"></i>
+              </button>
             <div class="dropdown-content hidden">
                 <a href="./index_es.html">ES</a>
                 <a href="./index_en.html">EN</a>
@@ -42,16 +44,30 @@
         </div>
     </div>
 
+    <div id="mySidenav" class="sidenav">
+        <li><a href="#section1">Cheatsheet</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+    </div>
 
+    <div class="wikicontent">
+        <header>
+            <h1>Several cheatsheets</h1>
+        </header>
 
-    <footer class="footer ">
-        <div class="text-center ">
-            <small class="copyright ">Designed by <a href="http://www.linkedin.com/in/amunozperera " target="_blank ">Adri Mu</a></small>
-        </div>
-        <!--//container-->
-    </footer>
-    <!--//footer-->
-
+        <article id="section1">
+            <h2>Trigonometry</h2>
+            <p>As $$e^{a+bi} = \cos(a) + i \sin(b)$$:</p>
+            <ul>
+                <li>$$\cos(2a) = \cos^2(a)-\sin^2(b)$$</li>
+                <li>$$\sin(2b) = 2\cos(a)\sin(b)$$</li>
+            </ul>
+            <p>Stats</p>
+            <ul>
+                <li>$$Var[x+y] = Var(x) + Var(y) + 2Cov[x,y]$$</li>
+            </ul>
+        </article>
+    </div>
 </body>
 
 <script src="assets/js/site.js "></script>

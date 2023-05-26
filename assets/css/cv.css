@@ -16,6 +16,10 @@ h6 {
     font-weight: 700;
 }
 
+h1 {
+    padding-top: 100px;
+}
+
 a {
     color: #2f4487;
     text-decoration: none;
@@ -302,7 +306,7 @@ p {
     color: #fb866a;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 760.98px) {
     .sidebar-wrapper {
         position: static;
         width: inherit;
@@ -320,7 +324,7 @@ p {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 950px) {
     .skillset .level-title {
         display: inline-block;
         width: 30%;
@@ -488,6 +492,15 @@ p {
     padding: 0;
 }
 
+.navbarwiki {
+    background-color: #1d5865;
+    /* display: flow-root;*/
+    padding: 0;
+    position: fixed;
+    display: block;
+    width: 100%;
+}
+
 .navbar a {
     float: left;
     font-size: 16px;
@@ -541,4 +554,73 @@ p {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+/* CSS styles for your blog page */
+
+
+/* The side navigation menu */
+
+.sidenav {
+    margin-top: 52px;
+    height: 100%;
+    /* 100% Full-height */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.wikicontent {
+    margin-left: 200px;
 }

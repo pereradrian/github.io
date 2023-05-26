@@ -624,3 +624,7 @@ p {
 .wikicontent {
     margin-left: 200px;
 }
+
+#password-generated {
+    width: 90%;
+}

@@ -30,5 +30,59 @@ function genPassword() {
 function copyPassword() {
     var copyText = document.getElementById("password-generated");
     copyText.select();
-    document.execCommand("copy");
+}
+
+function getRandom() {
+    var lowBoundRandom = parseFloat(document.getElementById("low-bound-random").value);
+    var highBoundRandom = parseFloat(document.getElementById("high-bound-random").value);
+
+    document.getElementById("random-generated").value = Math.floor(((highBoundRandom - lowBoundRandom) * Math.random() + lowBoundRandom) * 100) / 100;
+}
+
+function copyRandom() {
+    var copyText = document.getElementById("random-generated");
+    copyText.select();
+}
+
+function testRegexp() {
+    var regexpPattern = document.getElementById("regexpPattern").value;
+    var testString = document.getElementById("testString").value;
+    var regexpMatches = testString.match(regexpPattern)
+    if (regexpMatches != null) {
+        document.getElementById("regexpMatches").value = '"' + regexpMatches.join('", "') + '"';
+    } else {
+        document.getElementById("regexpMatches").value = '';
+    }
+}
+
+/* Image upload */
+const fileinput = document.getElementById('fileinput')
+
+const canvas = document.getElementById('canvas')
+
+const ctx = canvas.getContext('2d')
+
+const srcImage = new Image
+
+let imgData = null
+
+let originalPixels = null
+
+fileinput.onchange = function(e) {
+    if (e.target.files && e.target.files.item(0)) {
+        srcImage.src = URL.createObjectURL(e.target.files[0])
+    }
+}
+
+srcImage.onload = function() {
+    canvas.width = srcImage.width
+    canvas.height = srcImage.height
+    ctx.drawImage(srcImage, 0, 0, srcImage.width, srcImage.height)
+    imgData = ctx.getImageData(0, 0, srcImage.width, srcImage.height)
+    originalPixels = imgData.data.slice()
+
+    /* Process to text */
+    var n_columns = parseFloat(document.getElementById("ascii-art-columns").value);
+    /* TODO */
+
 }

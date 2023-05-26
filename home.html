@@ -41,15 +41,57 @@
         </div>
     </div>
 
-    <div class="wrapper mt-lg-5 ">
-        <p>Contraseña segura para siempre:</p>
+    <div>
+        <h1>Utilidades</h1>
+        <p>Esta página iba a ser otra cosa, pero son tan útiles estas herramientas que me parece una gran idea que estén disponibles para quien las necesite. También puedes pedírselo a chartgpt.</p>
         <div>
+            <h2>Contraseña robusta</h2>
+            <p>Contraseña robusta para siempre:</p>
             <div>
-                <input type="text" name="" placeholder="Create password" id="password-generated" readonly>
+                <div>
+                    <input type="text" name="" placeholder="Contraseña" id="password-generated" readonly>
+                </div>
+                <input type="number" name="" placeholder="Lonigitud" id="password-length" value="18" max="200">
+                <button id="button1" class="btn1" onclick="genPassword()">Generar</div>
+                <button id="button2" class="btn1" onclick="copyPassword()">Copiar</div>
             </div>
-            <input type="number" name="" placeholder="Password length" id="password-length" value="18" max="200">
-            <button id="button1" class="btn1" onclick="genPassword()">One more</div>
-            <button id="button2" class="btn1" onclick="copyPassword()">Copy</div>
+        </div>
+        <div>
+            <h2>Número aleatorio</h2>
+            <p>Proporciona un número aleatorio con distribución uniforme entre [low, high).</p>
+            <div>
+                <div>
+                    <input type="text" name="" placeholder="" id="random-generated" readonly>
+                </div>
+                <input type="number" name="" step="0.01" placeholder="Low" id="low-bound-random" value="0.0">
+                <input type="number" name="" step="0.01" placeholder="High" id="high-bound-random" value="1.0">
+                <button id="buttonGenerateRandom" class="btn1" onclick="getRandom()">Generar</div>
+                <button id="buttonCopyRandom" class="btn1" onclick="copyRandom()">Copiar</div>
+            </div>
+        </div>
+        <div>
+            <h2>Evaluador de expresiones regulares</h2>
+            <p>Evalúa la expresión regular en el texto proporcionado.</p>
+            <div>
+                <div>
+                    <input type="text" name="" placeholder="" id="regexpMatches" readonly>
+                </div>
+                <input type="text" name="" id="regexpPattern" placeholder="Patrón" >
+                <input type="text" name="" id="testString" placeholder="Test" >
+                <button id="buttonTestString" class="btn1" onclick="testRegexp()">Evaluar</div>
+            </div>
+        </div>
+        <div>
+            <h2>Generador de ascii art</h2>
+            <p>Sube una imagen y oberva como se convierte en ascii art</p>
+            <div>
+                <input type="number" name="" step="1" placeholder="Columns" id="ascii-art-columns" value="10">
+                <input type="file" accept="image/*" id="fileinput" />
+                <canvas id="canvas" width="0" height="0"></canvas>
+                <input type="text" name="" placeholder="" id="fileoutput" readonly>
+
+            </div>
+
         </div>
     </div>
 

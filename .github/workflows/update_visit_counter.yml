@@ -12,13 +12,13 @@ jobs:
 
       - name: Increment counter
         run: |
-          count=$(jq '.visits + 1' visit_counter.json)
-          echo "{\"visits\": $count}" > visit_counter.json
+          count=$(jq '.visits + 1' visit-counter.json)
+          echo "{\"visits\": $count}" > visit-counter.json
 
       - name: Commit and push update
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add visit_counter.json
+          git add visit-counter.json
           git commit -m "Update visit counter"
           git push

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CV - Español</title>
+    <title>Adri Mu</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -12,6 +12,8 @@
     <meta name="author" content="Adri Mu">
     <meta name="google-site-verification" content="kvanqFcy8j-O__OyfmlnpR943AVw7N1f9nQ46ib3vIc" />
     <link rel="shortcut icon" href="favicon.ico">
+    <!--Ajax import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- FontAwesome JS-->
@@ -26,7 +28,7 @@
 <body>
     <!-- Top navigation bar-->
     <div class="navbar">
-        <a href="./home.html">Home</a>
+        <!--<a href="./home.html">Home</a>-->
         <div class="dropdown">
             <button id="nav-dropbtn" class="dropbtn">CV 
             <i class="fa fa-caret-down"></i>
@@ -57,6 +59,14 @@
             <div class="education-container container-block">
                 <h2 class="container-block-title">Educación</h2>
                 <div class="item">
+                    <h4 class="degree">PhD in Computer Science (Proyectado para 2027)</h4>
+                    <p>
+                        <i>Estádistica y análisis de datos funcionales. Modelos Gaussianos y aprendizaje automático.</i>
+                    </p>
+                    <h5 class="meta">Universidad Autónoma de Madrid</h5>
+                    <div class="time">2024 - Presente</div>
+                </div>
+                <div class="item">
                     <h4 class="degree">Master's Degree in Mathematics and Applications (MMA)</h4>
                     <p>
                         <i>Procesos estocásticos, análisis de datos funcionales, ecuaciones diferenciales y cálculo numérico.</i>
@@ -78,12 +88,34 @@
                     <div class="time">2013 - 2018</div>
                 </div>
             </div>
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Scolarships</h2>
+                <div class="item">
+                    <h4 class="degree">Becario general del Ministerio de Educacion y Formacion profesional</h4>
+                    <p>
+                        <i>Otorgado a la excelencia académica como apoyo a la realización de mis estudios de master.</i>
+                    </p>
+                    <h5 class="meta">Gobierno de España, 2018-2020</h5>
+                </div>
+                <div class="item">
+                    <h4 class="degree">Becario general del Ministerio de Educación y Ciencia</h4>
+                    <p>
+                        <i>Otorgado a la excelencia académica como apoyo a la realización de mis estudios de grado.</i>
+                    </p>
+                    <h5 class="meta">Gobierno de España, 2013-2018</h5>
+                </div>
+            </div>
 
             <div class="languages-container container-block">
                 <h2 class="container-block-title">Idiomas</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Inglés <span class="lang-desc">(Competencia profesional completa, Cambridge B2)</span></li>
-                    <li>Español <span class="lang-desc">(Nativo)</span></li>
+                <ul class="list-unstyled interests-list"></ul>
+                    <li>Español<span class="lang-desc"> (Nativo)</span></li>
+                    <li>Inglés<span class="lang-desc"> (Competencia profesional completa, Cambridge B2)</span></li>
+                    <li>Francés<span class="lang-desc"> (Básico)</span></li>
+                    <li>Italiano<span class="lang-desc"> (Básico)</span></li>
+                    <li>Chino mandarín<span class="lang-desc">(Principiante)</span></li>
+                    <li>Árabe<span class="lang-desc"> (Principiante)</span></li>
+                    <li>Ruso<span class="lang-desc"> (Principiante)</span></li>
                 </ul>
             </div>
         </div>
@@ -93,20 +125,36 @@
 
             <section class="section experiences-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>Experiencia</h2>
-
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Analista y desarrollador</h3>
-                            <div class="time">septiembre 2018 - Presente</div>
+                            <h3 class="job-title">Project leader</h3>
+                            <div class="time">july 2023 - Present</div>
                         </div>
                         <div class="company">
-                            <a href="https://www.qrr.es/">Quantitative Risk Research (QRR), Madrid</a>
+                            <a href="https://www.quant.global/">Quant AI Lab, Madrid</a>
                         </div>
                     </div>
                     <div class="details">
                         <p>
-                            Líder de proyecto de procesos de ETL e instalación personalizada, diseño, desarrollo e implantación de la aplicación <a href="https://www.qrr.es/products/qalm/">QALM</a>, software crítico para cálculos intensivos con datos
+                            Leader on ETL and custom installation processes for clients. Design, development (full-stack) and maintenance in <a href="https://www.quant.global/products-solutions/qalm-balance-sheet-risk-management/">QALM</a> project, a real time critical software tool for data intensive computations applied
+                            to asset liability management (<i>ALM</i>). Analysis, processing and modelling of financial data for rate interest risk, liquidity risk and credit risk evaluation. Regulatory reports generation, automation and validation. 
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Lider de proyecto, analista y desarrollador</h3>
+                            <div class="time">septiembre 2018 - Presente</div>
+                        </div>
+                        <div class="company">
+                            <a href="https://www.quant.global/">Quantitative Risk Research (QRR), Madrid</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <p>
+                            Líder de proyecto de procesos de ETL e instalación personalizada, diseño, desarrollo e implantación de la aplicación <a href="https://www.quant.global/products-solutions/qalm-balance-sheet-risk-management/">QALM</a>, software crítico para cálculos intensivos con datos
                             a gran escala para la gestión de activos y pasivos (<i>ALM</i>). Procesamiento, análisis y modelado de datos financieros para la evaluación de riesgo de tipo de interés y de riesgo de liquidez, y generación de informes regulatorios.
                         </p>
                     </div>
@@ -125,7 +173,7 @@
             </section>
             <section class="skills-section section">
                 <!--//item-->
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-cogs   "></i></span>Habilidades</h2>
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-cogs"></i></span>Habilidades</h2>
                 <div class="skillset">
                     <ul class="skill-list">
                         <li class="skill-item">
@@ -172,11 +220,6 @@
             <section class="skills-section section">
                 <!--//item-->
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-wrench"></i></span>Herramientas</h2>
-                <div>
-                    <p>
-                        Me gusta aprender a utilizar nuevas herramientas software y lenguajes de programación. Estas son mis favoritas.
-                    </p>
-                </div>
                 <div class="skillset">
                     <ul class="skill-list">
                         <li class="tool-item">

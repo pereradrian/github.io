@@ -17,7 +17,9 @@
     <!--Ajax import-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
     <!-- FontAwesome JS-->
     <script defer src="assets/fontawesome/js/all.js"></script>
 
@@ -30,28 +32,26 @@
 <body>
     <!-- Top navigation bar-->
     <div class="navbar">
-        <a href="./home.html">Home</a>
+        <!--<a href="./home.html">Home</a>-->
         <div class="dropdown">
-            <button id="nav-dropbtn" class="dropbtn">CV 
-            <i class="fa fa-caret-down"></i>
-          </button>
+            <button id="nav-dropbtn" class="dropbtn">CV
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content hidden">
                 <a href="./index_es.html">ES</a>
                 <a href="./index_en.html">EN</a>
             </div>
         </div>
     </div>
-
-
-
+    <input type="hidden" id="visit-counter" value="0">
     <footer class="footer ">
         <div class="text-center ">
-            <small class="copyright ">Designed by <a href="http://www.linkedin.com/in/amunozperera " target="_blank ">Adri Mu</a></small>
+            <small class="copyright ">Designed by <a href="http://www.linkedin.com/in/amunozperera" target="_blank">Adri Mu</a></small>
         </div>
     </footer>
-
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/visit-counter.js "></script>
 </body>
 
-<script src="assets/js/site.js "></script>
 
 </html>

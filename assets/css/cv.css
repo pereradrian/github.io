@@ -332,9 +332,6 @@ p {
     }
 }
 
-#js-tool-item-span {
-    transition: width 1s ease;
-}
 
 .buggy-1 {
     margin-left: 30px;
@@ -346,6 +343,7 @@ p {
     display: block;
     position: relative;
     text-decoration: underline;
+    color: blue;
 }
 
 .image-cropper {
@@ -404,6 +402,7 @@ p {
 .tool-item-content {
     width: 100%;
     border-bottom: 5px solid #8c9be6;
+    transition: width 2s ease;
 }
 
 .tool-item-content p {

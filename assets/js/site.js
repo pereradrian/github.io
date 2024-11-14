@@ -86,3 +86,19 @@ if (canvas) {
     
     }
 }
+
+// Fancy stuff
+
+// Función para generar un valor aleatorio dentro de un rango
+function uniform(low, high) {
+  return (high - low) * Math.random() + low;
+}
+
+// Obtener el elemento
+const elemento = document.getElementById('js-tool-item-span');
+
+// Configurar el intervalo para cambiar el ancho cada segundo
+setInterval(function() {
+  const width = uniform(50, 89).toFixed(0);
+  elemento.style.width = width + 'px';
+}, 1000);

@@ -332,6 +332,10 @@ p {
     }
 }
 
+#js-tool-item-span {
+    transition: width 1s ease;
+}
+
 .buggy-1 {
     margin-left: 30px;
     height: 3px;

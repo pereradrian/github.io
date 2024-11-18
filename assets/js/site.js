@@ -100,7 +100,7 @@ setInterval(function() {
     // Obtener el elemento
     const elements = document.querySelectorAll('.tool-item-content')
     elements.forEach((element) => {
-        const width = uniform(50, 95).toFixed(0);
+        const width = uniform(70, 90).toFixed(0);
         element.style.width = width + 'px';
     })
-}, uniform(500, 2000).toFixed(0));
+}, uniform(2000, 10000).toFixed(0));

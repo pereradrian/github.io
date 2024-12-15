@@ -631,3 +631,17 @@ p {
 #password-generated {
     width: 90%;
 }
+
+th, td {
+    text-align: right;
+    padding: 4px;
+}
+
+table {
+    margin: 16px;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 4px;
+}

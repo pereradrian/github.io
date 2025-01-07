@@ -645,3 +645,8 @@ table {
     flex: 1;
     padding: 4px;
 }
+
+.grid {
+    display: flex;
+    align-items: center;
+}
